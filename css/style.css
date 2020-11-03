@@ -1,0 +1,804 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html
+{
+	font-size: 63%;
+	scroll-behavior: smooth;
+	font-family: 'Cutive';
+}
+section
+{
+	width: 100%;
+	height: 100vh;
+}
+
+/*****************HEADER**********/
+
+nav
+{
+	background-color: transparent!important;
+}
+.navbar-brand .fas
+{
+	color: #b07c4f;
+	font-size: 6rem;
+	padding-top: 2rem;
+		transition: all .3s ease;
+}
+.navbar-brand .fas:hover
+{
+	color:  #f0e875;
+}
+.navbar-nav .nav-item .nav-link 
+{
+	color: #b07c4f;
+	font-size: 2rem;
+	margin-right: 2rem;
+	font-weight: bolder;
+	padding-top: 2rem;
+	transition: all .5s ease;
+}
+.navbar-nav .nav-item .nav-link:hover
+{
+	color:  #f0e875;
+	border-bottom: .2rem solid #b07c4f;
+
+}
+.header
+{
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.5)), url(../images/hero.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.header .banner
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all .5s ease;
+}
+.header .banner h1
+{
+	font-weight: bolder;
+	letter-spacing: .5rem;
+	font-size: 4.5rem;
+	color: #b07c4f;
+	padding-bottom: 1rem;
+	cursor: pointer;
+	animation-name: slide;
+	animation-duration: 2s;
+}
+
+@keyframes slide
+{
+	0%{
+		transform: translate(-100rem);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+.header .banner p
+{
+	font-weight: bold;
+	letter-spacing: .1rem;
+	font-size: 2rem;
+	animation-name: slide;
+	animation-duration: 2s;
+	animation-delay: .5s;
+	
+	animation-fill-mode: backwards;
+}
+.header .banner:hover .coffee
+{
+	color:  #f0e875;
+}
+
+/*****************about-us**********/
+.about_us
+{
+	background-color: #000;
+	margin: 5rem 0;
+	color:  #b07c4f;
+	height: 78vh;
+}
+.about_us .first, .about_us.second
+{
+	padding-top: 10rem;
+}
+
+.about_us .first .title-text
+{
+	font-size: 7.5rem;
+	padding-bottom: 2rem;
+	letter-spacing: .3rem;
+	font-weight: 500;
+	font-family: 'Alegreya SC';
+}
+
+
+.about_us .first .para
+{
+   font-size: 2.5rem;
+   line-height: 4.5rem;
+   letter-spacing: .1rem;
+   padding-bottom: 3rem;
+}
+
+.about-images
+{
+	position: relative;
+	padding-top: 10rem;
+}
+.about-img
+{
+	position: absolute;
+	object-fit: cover;
+	width: 15rem;
+	transition: all 1s ease;
+	opacity: .9;
+
+}
+.img-1
+{
+	left: 10%;
+	top: 20%;
+
+}
+.img-2
+{
+	left: 30%;
+	top: 40%;
+	z-index: 10;
+	
+}
+.img-3
+{
+	left: 50%;
+	top: 65%;
+	z-index: 20;
+	
+}
+.img-4
+{
+	left: 50%;
+	top: 20%;
+	
+	
+}
+.img-5
+{
+	left: 10%;
+	top: 65%;
+	
+	
+}
+
+
+
+.about-img:hover 
+{
+   outline: 1rem solid  #dbc1ac;
+   outline-offset: 3.2rem;
+   transform: scale(1.3);
+   transform: rotate(90deg);
+   z-index: 30;
+   opacity: 1;
+   cursor: pointer;
+}
+
+ 
+.about-img:not(:hover)
+{
+	opacity: .5;
+}
+
+.btn
+{
+	color: #b07c4f;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	border: .1rem solid #dbc1ac;
+	text-transform: capitalize;
+}
+
+.hvr-right
+{
+	display: inline-block;
+	vertical-align: middle;
+	transition-duration: .5s;
+	transform: perspective(.1rem) translateZ(0);
+	box-sizing: 0 0 .1rem rgba(0,0,0,.9);
+	position: relative;
+	transition-property: color;
+}
+.hvr-right:before
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	z-index: -1;
+	background-color: #dbc1ac;
+	transition-timing-function:ease-out;
+	transform:  scaleX(0);
+	transform-origin: 0 50%;
+	transition-property: transform;
+	transition-duration: .5s;
+}
+
+.hvr-right:hover, .hvr-right:focus,.hvr-right:active
+{
+	color: #000;
+}
+
+.hvr-right:hover:before, .hvr-right:focus:before,.hvr-right:active:before
+{
+	transition-timing-function: cubic-bezier(.52, 1.64, .37, .66);
+	transform: scaleX(1);
+}	
+
+/*****************MENU**********/
+
+.menu
+{
+	height: auto;
+	
+} 
+
+.content-4 .nav
+{
+  justify-content: center;
+  margin: 5%;
+}
+
+
+.content-4  .nav-tabs
+{
+  border: none;
+  background-color: #000;
+  cursor: pointer;
+  margin: .2rem;
+  text-align: center;
+  transition: all .5s ease;
+}
+
+
+.content-4 .tab-item
+{
+	text-decoration: none;
+	color:  #b07c4f;	
+	transition: all .4s ease;
+}
+
+.content-4 .tab-item i
+{
+	display:block;
+	font-size: 4.5rem;
+	padding: 2.5rem 7rem;
+		transition: all .4s ease;
+
+}
+.content-4 .tab-item span
+{
+	display: inline-block;
+	padding-bottom: 1.6rem;
+	width: 100%;
+	font-size: 1.6rem;
+	transition: all .4s ease;
+	  
+}
+
+
+.content-4 .tab-item .active
+{
+	color: #967259;
+}
+
+
+
+
+.content-4  .nav-tabs:hover .tab-item, .content-4  .nav-tabs:active .tab-item
+{
+
+color: #dbc1ac;
+}
+.content-4  .nav-tabs:hover 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+
+.content-4  .nav-tabs:hover span
+{
+	font-weight: bolder;
+	 font-family: 'Allura';
+	 letter-spacing: .18rem;
+
+}
+
+.tab-content
+{
+	margin-bottom: 5%;
+	transition: all .4s ease;
+}
+
+.tab-content .tab-pane h4
+{
+
+
+	font-size: 2.4rem;
+	font-weight: bold;
+	  font-family: 'Actor';
+}
+
+.tab-content .tab-pane p
+{
+	font-size: 1.5rem;
+}
+
+
+
+/********************MOST-DEMANDED*********************/
+
+.most-demanded
+{
+	position: relative;
+	margin-top: 2rem;
+	height: 75vh;
+	margin-bottom: 3rem;
+
+}
+.video-container
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: .75;
+}
+
+
+
+.bg-vedio
+{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.most-demanded h1
+{
+	font-size: 4rem;
+	letter-spacing: .4rem;
+	font-family: 'Aladin';
+}
+.coffee-card:hover 
+{
+  cursor: pointer;
+}
+
+.coffee-card .card-header h3
+{
+	font-size: 2.5rem;
+	padding: 1.5rem 2.5rem;
+	font-family: 'Alegreya SC';
+}
+
+.coffee-card .card-footer h5
+{
+
+padding: 1rem 2rem;
+font-family: 'Alegreya SC';
+font-size: 1.5rem;
+color: #47484a;
+
+}
+
+
+
+.coffee-card .card-body img
+{
+	border-radius:  1rem;
+}
+
+
+
+.coffee-card
+{
+	position: relative;
+	box-shadow: 5px 15px 50px #634832;
+	max-width: 42rem;
+	transition: all .8s;
+	overflow: hidden;
+}
+
+.rotate
+{
+	perspective: 100rem;
+}
+
+
+.back
+{
+	position: absolute;
+	top: -100%;
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	user-select: none;
+	pointer-events: none;
+	transform: rotateY(180deg);
+	transition: top .8s opacity .4s;
+}
+
+
+.back-content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.rotate:hover .coffee-card
+{
+	transform: rotateY(180deg);
+}
+
+.rotate:hover .back
+{
+	opacity: 1;
+	top: 0;
+	user-select: auto;
+	pointer-events: auto;
+}
+
+.back .back-content h2
+{
+	font-size: 3rem;
+	padding-bottom: 1rem;
+	font-weight: lighter;
+}
+
+.back .back-content a
+{
+	transition: all .5s ease;
+	font-size: 2rem;
+}
+.back .back-content a:hover
+{
+	border-color: #000;
+	border-width: .2rem;
+}
+
+
+
+
+
+
+/*******************CONTACT********************/
+.contact
+{
+
+}
+.contact .heading
+{
+	padding-top: 3.5rem;
+	font-family: 'Alegreya SC';
+	font-size: 3.65rem;
+	letter-spacing: .2rem;
+	padding-bottom: 8rem;
+
+}
+.contact .form-group label
+{
+	font-size: 2rem;
+}
+
+
+.contact .form-group input
+{
+	height: 5rem;
+}
+
+ ::placeholder
+{
+	font-size: 1.5rem;
+}
+
+.contact  a
+{
+	border-color:  #967259;
+	border-width: .2rem;
+	
+}
+
+/*******************footer********************/
+.footer
+{
+  background-color: #000;
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  color:  #967259;
+}
+
+
+.footer h1
+{
+	
+	font-weight: bolder;
+	padding-top: 3rem;
+	font-family: 'Alegreya SC';
+	font-size: 3.3rem;
+	
+	
+	
+}
+.social-links
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+}
+.social-links a
+{
+	display:inline-block; 
+	text-decoration: none;
+	color: #967259;
+	font-size: 2.5rem;
+	margin-right: 2rem;
+	
+}
+.social-links i
+{
+	padding: 1rem; 
+	transition: all .5s ease;
+	border: none;
+}
+.social-links i:hover
+{
+	border: .1rem solid #967259;
+	background-color: #967259;
+	color: #000;
+	border-radius: 50%;
+}
+
+
+.footer  h5
+{
+	word-spacing: .2rem;
+	letter-spacing: .1rem;
+	font-size: 1.55rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px)
+{
+	html
+	{
+		font-size: 45%;
+	}
+	.header .banner
+     {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	
+    }
+    .navbar-nav .nav-item .nav-link 
+    {
+    	text-align: center;
+    	
+    	
+    }
+    .navbar-nav .nav-item .nav-link:hover
+     {
+	color:  #f0e875;
+	border-bottom: none;
+
+       }
+       .navbar-collapse
+       {
+       	background-color: #b2b2b2;
+       }
+       .contact .first
+       {
+       	margin: 0;
+       	padding: 0;
+       }
+       .contact .map
+       {
+       	width: 50rem;
+       	height: 60rem;
+       	
+       }
+}
+
+
+@media screen and (max-width:375px)
+{
+	html
+	{
+		font-size: 30%;
+	}
+	  
+       
+     .header .banner h1
+     {
+     	font-size: 8rem;
+     }
+     .header .banner p
+     {
+     	font-size: 4rem;
+
+     }
+     .about_us
+     {
+     	text-align: center;
+     	height: auto;
+
+     }
+     .btn
+     {
+     	margin-bottom: 6rem;
+     	font-size: 4rem;
+     	margin-top: 1rem;
+     }
+     .menu
+     {
+     	height: auto;
+     }
+     .content-4 .nav
+     {
+     	display: flex;
+     	flex-direction: column;
+     	justify-content: center;
+     	align-content: center;
+     }
+     .content-4 .nav .nav-item
+     {
+     	width: 60%;
+     	text-align: center;
+
+     }
+     .content-4 .tab-item i
+     {
+     	padding: 5rem;
+     	font-size: 5.5rem;
+     }
+      .content-4 .tab-item span
+      {
+      	font-size: 2rem;
+      }
+     .tab-content .tab-pane
+     {
+     	text-align: center;
+     }
+     .tab-content .tab-pane h4
+     {
+     	font-size: 3rem;
+     	padding-bottom: 2rem;
+     }
+     .tab-content .tab-pane p
+     {
+     	font-size: 2rem;
+     }
+     .most-demanded
+     {
+     	height: auto;
+     }
+    
+     .coffee-card
+     {
+	
+	
+	max-width: 80%;
+	margin: 0 auto;
+
+	
+     }
+     .coffee-card .card-header h3
+     {
+     	font-size: 3.5rem;
+     }
+     .coffee-card .card-footer h5
+     {
+         font-size: 2.5rem;
+     }
+    .coffee-card .back .back-content h2
+    {
+     
+     font-size: 6rem;
+
+ 
+    }
+     .coffee-card .back .back-content h3
+     {
+     	font-size: 4rem;
+     	padding-bottom: 3rem;
+     }
+     .coffee-card .back .back-content  a
+     {
+     	font-size: 3rem;
+     }
+      .contact
+      {
+      	height: auto;
+      }
+     .contact .map
+       {
+       	width: 100%;
+       	height: 100%;
+       	padding-top: 1rem;
+       }
+       .contact .heading
+       {
+       	padding-top: 5rem;
+       }
+        .contact .first
+       {
+       	margin: 1.5rem; 
+       	padding: 1.5rem;
+       }
+      
+       .contact .form-group input,.contact .form-group textarea
+       {
+       	width: 50%;
+
+       }
+       .footer
+       {
+       	height: auto;
+       }
+        .footer h5
+        {
+        	padding-bottom: 1.5rem;
+        	font-size: 2rem;
+        }
+
+}
